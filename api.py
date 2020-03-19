@@ -67,8 +67,6 @@ class Users(Resource):
         contato = [users for users in contato if users["name"] != name]
         return name+" foi deletado com sucesso.", 200
 
-#Para rodar a api
 api.add_resource(Users, "/users/<string:name>")
 
-#app.run(debug=True, port=80)
 app.run(host="0.0.0.0", port=80) #Config AWS
