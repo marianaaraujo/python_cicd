@@ -69,4 +69,4 @@ class Users(Resource):
 
 api.add_resource(Users, "/users/<string:name>")
 
-app.run(host="0.0.0.0", port=80) #Config AWS
+app.run(host="0.0.0.0", port=80)
